@@ -1,0 +1,16 @@
+# ملف render.yaml
+services:
+  - type: web
+    name: maljiaonsaaajebot
+    runtime: python
+    branch: main
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: API_ID
+        value: your_api_id_here
+      - key: API_HASH
+        value: your_api_hash_here
+      - key: STRING_SESSION
+        value: your_string_session_here
